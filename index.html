@@ -1,61 +1,752 @@
-<!DOCTYPE html>
-<html lang="es">
+<!doctype html>
+<html lang="es-PE">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>InmoNode: Plataforma de Gestión Inmobiliaria y Venta de Lotes</title>
-  <meta name="description" content="Cotiza, simula tu financiamiento y gestiona la compra de tu lote con total transparencia. Accede a tus contratos y estado de cuenta inmobiliario 24/7.">
-  <meta name="keywords" content="compra de lotes, proyectos inmobiliarios, simulación de crédito inmobiliario, terrenos, InmoNode, NovaCorp">
-  <meta name="author" content="NovaCorp">
-  <meta name="theme-color" content="#020202">
 
+  <title>inmoNode | Vende lotes en campo, aunque no haya señal</title>
+  <meta name="description" content="inmoNode registra prospectos y separaciones de lotes sin internet, lee vouchers con OCR en segundos y sincroniza todo con tu oficina al recuperar conexión.">
+  <meta name="keywords" content="inmoNode, venta de lotes, CRM inmobiliario, modo offline, OCR vouchers, separación de lotes, Perú">
+  <meta name="author" content="NovaCorp">
+  <meta name="theme-color" content="#0F161D">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://1acc0238-2620-13981-novacorp-inmonode.github.io/InmoNode-Landing-Page/">
+
+  <!-- Open Graph / redes sociales -->
   <meta property="og:type" content="website">
   <meta property="og:locale" content="es_PE">
-  <meta property="og:site_name" content="InmoNode">
-  <meta property="og:title" content="InmoNode: vende lotes en campo, aunque no haya señal">
-  <meta property="og:description" content="Registra prospectos y separaciones sin internet, lee vouchers con OCR y sincroniza todo con tu oficina al recuperar conexión.">
-  <meta property="og:image" content="assets/img/og-image.png">
+  <meta property="og:site_name" content="inmoNode">
+  <meta property="og:title" content="inmoNode | Vende lotes en campo, aunque no haya señal">
+  <meta property="og:description" content="Registro offline de prospectos y separaciones, lectura de vouchers con OCR y sincronización automática con tu oficina.">
+  <meta property="og:url" content="https://1acc0238-2620-13981-novacorp-inmonode.github.io/InmoNode-Landing-Page/">
+  <meta property="og:image" content="https://1acc0238-2620-13981-novacorp-inmonode.github.io/InmoNode-Landing-Page/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="inmoNode: vende lotes en campo, aunque no haya señal">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://1acc0238-2620-13981-novacorp-inmonode.github.io/InmoNode-Landing-Page/assets/og-image.png">
+  <meta name="twitter:title" content="inmoNode | Vende lotes en campo, aunque no haya señal">
+  <meta name="twitter:description" content="Registro offline de prospectos y separaciones, lectura de vouchers con OCR y sincronización automática con tu oficina.">
 
-  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <!-- Tipografía -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&display=swap">
-  <link rel="stylesheet" href="assets/css/tokens.css">
-  <link rel="stylesheet" href="assets/css/base.css">
-  <link rel="stylesheet" href="assets/css/sections.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <script>document.documentElement.classList.add("js");</script>
+  <script src="js/main.js" defer></script>
 </head>
-<body data-app-url="">
-  <svg class="visually-hidden" aria-hidden="true" focusable="false">
-    <symbol id="logo-mark" viewBox="0 0 64 64">
-      <path fill="#87c757" d="M20 29.2 29.6 34 20 38.8 10.4 34z"/>
-      <path fill="#319a4b" d="M32 23.2 41.6 28 32 32.8 22.4 28zM44 29.2 53.6 34 44 38.8 34.4 34zM32 35.2 41.6 40 32 44.8 22.4 40z"/>
-      <path fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M8 41l24 12 24-12M8 47l24 12 24-12"/>
-      <path fill="currentColor" fill-rule="evenodd" d="M32 27c0 0-7.5-8.5-7.5-14.5a7.5 7.5 0 0 1 15 0C39.5 18.5 32 27 32 27zm0-11.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-    </symbol>
-    <symbol id="icon-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
-    <symbol id="icon-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
-    <symbol id="icon-signal-off" viewBox="0 0 24 24"><path d="M3 3l18 18M8.5 16.5a5 5 0 0 1 7 0M5 13a10 10 0 0 1 4-2.5M19 13a10 10 0 0 0-3.5-2.3M2 9.5a15 15 0 0 1 4-2.7M22 9.5a15 15 0 0 0-11-4.4M12 20h.01"/></symbol>
-    <symbol id="icon-receipt" viewBox="0 0 24 24"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2zM9 8h6M9 12h6"/></symbol>
-    <symbol id="icon-eye-off" viewBox="0 0 24 24"><path d="M3 3l18 18M10.5 5.2A9.5 9.5 0 0 1 12 5c5 0 8.5 4.5 9.5 7a13 13 0 0 1-2.6 3.7M6.3 6.6A13 13 0 0 0 2.5 12c1 2.5 4.5 7 9.5 7a9.5 9.5 0 0 0 4.2-1M9.9 10a3 3 0 0 0 4.1 4.1"/></symbol>
-    <symbol id="icon-phone" viewBox="0 0 24 24"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18h2"/></symbol>
-    <symbol id="icon-scan" viewBox="0 0 24 24"><path d="M4 8V5.5A1.5 1.5 0 0 1 5.5 4H8M16 4h2.5A1.5 1.5 0 0 1 20 5.5V8M20 16v2.5a1.5 1.5 0 0 1-1.5 1.5H16M8 20H5.5A1.5 1.5 0 0 1 4 18.5V16M8 12h8"/></symbol>
-    <symbol id="icon-sync" viewBox="0 0 24 24"><path d="M20 11a8 8 0 0 0-14.3-4.5L4 8.5M4 4v4.5h4.5M4 13a8 8 0 0 0 14.3 4.5l1.7-2M20 20v-4.5h-4.5"/></symbol>
-    <symbol id="icon-folder" viewBox="0 0 24 24"><path d="M3 7.5A1.5 1.5 0 0 1 4.5 6H9l2 2.5h8.5A1.5 1.5 0 0 1 21 10v7.5a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 17.5z"/></symbol>
-    <symbol id="icon-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
-    <symbol id="icon-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
-    <symbol id="icon-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
-    <symbol id="icon-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
-  </svg>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
   <header class="site-header">
-    <div class="container site-header-inner">
-      <a class="brand" href="#inicio" aria-label="InmoNode, ir al inicio">
-        <svg class="brand-mark" aria-hidden="true"><use href="#logo-mark"/></svg>
-        <span class="brand-name">Inmo<span>Node</span></span>
+    <div class="container site-header__inner">
+      <a class="logo" href="#inicio" aria-label="inmoNode, ir al inicio">
+        <svg class="logo__mark" viewBox="0 0 48 48" aria-hidden="true">
+          <path d="M4 32 24 22l20 10-20 10z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+          <path d="M10 32 24 25l6.2 3.1-14 7z" fill="#4cc46a"/>
+          <path d="M19 36.6 33 29.6l5 2.4-14 7z" fill="#4cc46a"/>
+          <path d="M24 2c-6 0-10.8 4.7-10.8 10.5C13.2 20.2 24 28.6 24 28.6s10.8-8.4 10.8-16.1C34.8 6.7 30 2 24 2z" fill="currentColor"/>
+          <circle cx="24" cy="12.4" r="4.2" fill="var(--logo-hole, #0f161d)"/>
+        </svg>
+        <span class="logo__text">Inmo<span class="logo__accent">Node</span></span>
       </a>
+
       <nav class="site-nav" id="site-nav" aria-label="Principal">
-        <ul class="site-nav-list">
+        <ul class="site-nav__list" role="list">
+          <li><a href="#solucion">Solución</a></li>
+          <li><a href="#como-funciona">Cómo funciona</a></li>
+          <li><a href="#compradores">Compradores</a></li>
+          <li><a href="#planes">Planes</a></li>
+          <li><a href="#equipo">Equipo</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+        <a class="btn btn--primary btn--lg site-nav__cta" href="#demo">Solicitar demo gratuita</a>
+      </nav>
+
+      <a class="btn btn--primary site-header__cta" href="#demo">Solicitar demo</a>
+
+      <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Abrir menú">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+    </div>
+    <div class="scroll-progress" aria-hidden="true"></div>
+  </header>
+
+  <main id="contenido">
+    <!-- ===== Hero ===== -->
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="hero__map" aria-hidden="true">
+        <!-- Plano de lotes generado en js/main.js -->
+        <svg class="lot-map" viewBox="0 0 1200 900" preserveAspectRatio="xMidYMid slice"></svg>
+      </div>
+
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <span class="hero__badge">
+            <span class="hero__badge-dot"></span>
+            App offline + OCR para venta de lotes
+          </span>
+
+          <h1 class="hero__title" id="hero-title">
+            Vende lotes en campo, <span class="hero__title-accent">aunque no haya señal</span>
+          </h1>
+
+          <p class="hero__lead">
+            inmoNode registra prospectos y separaciones sin internet, lee tus vouchers con OCR en segundos y sincroniza todo con tu oficina al recuperar conexión.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary btn--lg" href="#demo">Solicitar demo gratuita</a>
+            <a class="link-arrow" href="#compradores">¿Buscas un lote? Ver proyectos</a>
+          </div>
+
+          <p class="hero__note">Piloto gratuito en tu proyecto de lotización.</p>
+        </div>
+
+        <!-- Mockup de la app -->
+        <div class="hero__visual" aria-hidden="true">
+          <div class="phone">
+            <div class="phone__screen">
+              <div class="app-bar">
+                <span class="app-bar__time">10:42</span>
+                <span class="chip chip--offline"><span class="chip__dot"></span>Sin conexión</span>
+              </div>
+
+              <div class="app-head">
+                <p class="app-head__label">Proyecto</p>
+                <p class="app-head__title">Las Lomas · Etapa 2</p>
+              </div>
+
+              <div class="voucher">
+                <div class="voucher__scan">
+                  <span class="voucher__corner voucher__corner--tl"></span>
+                  <span class="voucher__corner voucher__corner--tr"></span>
+                  <span class="voucher__corner voucher__corner--bl"></span>
+                  <span class="voucher__corner voucher__corner--br"></span>
+                  <div class="voucher__paper">
+                    <span></span><span></span><span></span><span></span>
+                  </div>
+                </div>
+                <p class="voucher__title">Voucher leído con OCR</p>
+                <dl class="voucher__fields">
+                  <div><dt>Monto</dt><dd>S/ 1,500.00</dd></div>
+                  <div><dt>Fecha</dt><dd>08/10/2026</dd></div>
+                  <div><dt>N° operación</dt><dd>004812736</dd></div>
+                </dl>
+              </div>
+
+              <div class="app-lot">
+                <span class="app-lot__id">B-14</span>
+                <div>
+                  <strong>Lote 14 · Mz. B</strong>
+                  <span>120 m² · Registrado</span>
+                </div>
+                <span class="chip chip--ok">Separado</span>
+              </div>
+
+              <div class="app-sync">
+                <span class="app-sync__icon">↻</span>
+                3 registros pendientes de sincronizar
+              </div>
+            </div>
+          </div>
+
+          <div class="float-card float-card--top">
+            <span class="float-card__icon">✓</span>
+            <div>
+              <strong>Lote B-14 separado</strong>
+              <span>Guardado en el dispositivo</span>
+            </div>
+          </div>
+
+          <div class="float-card float-card--bottom">
+            <span class="float-card__icon float-card__icon--alt">⟳</span>
+            <div>
+              <strong>Sincronización automática</strong>
+              <span>Al volver la señal</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Franja de datos ===== -->
+    <section class="stats section--dark" aria-label="inmoNode en cifras">
+      <div class="container">
+        <ul class="stats__grid" role="list">
+          <li class="stat reveal">
+            <p class="stat__value"><span data-count="100">100</span>%</p>
+            <p class="stat__label">operativo sin internet en el terreno</p>
+          </li>
+          <li class="stat reveal">
+            <p class="stat__value"><span data-count="3">3</span> datos</p>
+            <p class="stat__label">leídos del voucher por OCR: monto, fecha y N° de operación</p>
+          </li>
+          <li class="stat reveal">
+            <p class="stat__value">−<span data-count="80">80</span>%</p>
+            <p class="stat__label">de papel en el ciclo de venta <span class="stat__tag">Meta año 1</span></p>
+          </li>
+          <li class="stat reveal">
+            <p class="stat__value"><span data-count="0">0</span></p>
+            <p class="stat__label">vouchers perdidos en auditorías <span class="stat__tag">Meta</span></p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== Problema ===== -->
+    <section class="section section--alt section--sheet problem" id="problema" aria-labelledby="problem-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">El problema</span>
+          <h2 id="problem-title">Vender lotes en campo todavía depende del papel</h2>
+          <p class="lead">En los proyectos alejados de la ciudad no hay señal. La información viaja en recibos a mano, fotos por WhatsApp y vouchers que se borran.</p>
+        </div>
+
+        <ul class="problem__grid" role="list">
+          <li class="card problem-card reveal">
+            <span class="problem-card__num">01</span>
+            <span class="icon-tile" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M2 8.5a15 15 0 0 1 20 0M5.5 12a10 10 0 0 1 13 0M9 15.5a5 5 0 0 1 6 0"/><circle cx="12" cy="19" r="1"/><path d="M3 3l18 18"/></svg>
+            </span>
+            <h3>Sin señal en el terreno</h3>
+            <p>La disponibilidad de lotes se coordina por WhatsApp o de palabra, y los datos del cliente se anotan en papel para digitarlos después en la oficina.</p>
+          </li>
+          <li class="card problem-card reveal">
+            <span class="problem-card__num">02</span>
+            <span class="icon-tile" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M6 2h9l3 3v17l-2-1.5-2 1.5-2-1.5-2 1.5-2-1.5L6 22z"/><path d="M9 8h6M9 12h6M9 16h3"/></svg>
+            </span>
+            <h3>Vouchers que se borran o se pierden</h3>
+            <p>El papel térmico se deteriora y el riesgo de extravío en el traslado llega hasta 20%. Luego, la oficina concilia cada pago a mano.</p>
+          </li>
+          <li class="card problem-card reveal">
+            <span class="problem-card__num">03</span>
+            <span class="icon-tile" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/><path d="M3 3l18 18"/></svg>
+            </span>
+            <h3>Compradores sin visibilidad</h3>
+            <p>Envían comprobantes por chat y llaman para pedir copias de su contrato. Sin transparencia crece el temor a la informalidad y la compra se frena.</p>
+          </li>
+        </ul>
+
+        <figure class="problem__quote reveal">
+          <blockquote>
+            <p>Hasta <strong>20% de la productividad administrativa</strong> de los equipos de venta se pierde por el papel y la doble digitación.</p>
+          </blockquote>
+          <figcaption>McKinsey &amp; Company, <cite>Automation in Real Estate</cite> (2021), citado en el informe del proyecto.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===== Solución / funcionalidades ===== -->
+    <section class="section features" id="solucion" aria-labelledby="features-title">
+      <div class="container">
+        <div class="section-head section-head--center reveal">
+          <span class="eyebrow">La solución</span>
+          <h2 id="features-title">Una sola plataforma, del terreno a la oficina</h2>
+          <p class="lead">inmoNode une una app móvil que funciona sin internet con un portal web para tu equipo y tus compradores.</p>
+        </div>
+
+        <ul class="features__grid" role="list">
+          <li class="card feature feature--dark feature--wide reveal">
+            <span class="icon-tile" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M10 18h4"/><path d="M9 8.5l2 2 4-4"/></svg>
+            </span>
+            <h3>Modo offline con base local</h3>
+            <p>Registra prospectos, consulta el plano y separa lotes sin señal. Todo se guarda en el dispositivo y nada se pierde.</p>
+            <div class="feature__demo offline-demo" aria-hidden="true">
+              <span class="chip chip--offline"><span class="chip__dot"></span>Sin conexión</span>
+              <span class="offline-demo__arrow">→</span>
+              <span class="chip chip--ok">✓ Guardado en el dispositivo</span>
+            </div>
+            <ul class="feature__tags" role="list">
+              <li>Catálogo de lotes</li>
+              <li>Plano del proyecto</li>
+              <li>Separación in situ</li>
+            </ul>
+          </li>
+
+          <li class="card feature reveal">
+            <span class="icon-tile" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M3 7V5a2 2 0 0 1 2-2h2M17 3h2a2 2 0 0 1 2 2v2M21 17v2a2 2 0 0 1-2 2h-2M7 21H5a2 2 0 0 1-2-2v-2"/><path d="M7 9h10M7 12h10M7 15h6"/></svg>
+            </span>
+            <h3>Vouchers leídos con OCR</h3>
+            <p>Toma una foto y inmoNode extrae los datos del pago. Si algo sale mal, lo corriges en un toque.</p>
+            <dl class="feature__demo ocr-demo" aria-hidden="true">
+              <div><dt>Monto</dt><dd>S/ 1,500.00</dd></div>
+              <div><dt>Fecha</dt><dd>08/10/2026</dd></div>
+              <div><dt>N° operación</dt><dd>004812736</dd></div>
+            </dl>
+          </li>
+
+          <li class="card feature reveal">
+            <span class="icon-tile" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M21 12a9 9 0 0 1-15.5 6.2L3 16M3 12a9 9 0 0 1 15.5-6.2L21 8"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+            </span>
+            <h3>Sincronización automática</h3>
+            <p>Al volver la señal, los registros llegan solos a la oficina. Si otro agente ya vendió el lote, te avisamos.</p>
+            <div class="feature__demo sync-demo" aria-hidden="true">
+              <div class="sync-demo__labels"><span>Sincronizando</span><span>3 de 3</span></div>
+              <div class="sync-demo__bar"><span></span></div>
+            </div>
+          </li>
+
+          <li class="card feature feature--wide feature--tint reveal">
+            <span class="icon-tile" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 6a2 2 0 0 1 2-2h4l2 2h6a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M12 10v6M9 13l3 3 3-3"/></svg>
+            </span>
+            <h3>Repositorio digital centralizado</h3>
+            <p>Contratos, vouchers y estados de cuenta en un solo lugar seguro en la nube, listos para la conciliación y las auditorías.</p>
+            <ul class="feature__demo docs-demo" role="list" aria-hidden="true">
+              <li><span class="docs-demo__ext">PDF</span>Contrato_B-14</li>
+              <li><span class="docs-demo__ext">JPG</span>Voucher_separación</li>
+              <li><span class="docs-demo__ext">PDF</span>Estado_de_cuenta</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== Cómo funciona ===== -->
+    <section class="section section--dark section--sheet how" id="como-funciona" aria-labelledby="how-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Cómo funciona</span>
+          <h2 id="how-title">Del terreno a tu oficina en 3 pasos</h2>
+          <p class="lead">Sin papel, sin digitar dos veces y sin depender de la señal.</p>
+        </div>
+
+        <div class="how__layout">
+          <ol class="steps" role="list">
+            <li class="step reveal" data-step="1">
+              <span class="step__num" aria-hidden="true">1</span>
+              <div class="step__body">
+                <span class="step__label">Paso 1</span>
+                <h3>Registra en campo, aunque no haya señal</h3>
+                <p>Abre el catálogo y el plano descargados, registra al prospecto y separa el lote. Todo queda guardado en el teléfono.</p>
+              </div>
+            </li>
+            <li class="step reveal" data-step="2">
+              <span class="step__num" aria-hidden="true">2</span>
+              <div class="step__body">
+                <span class="step__label">Paso 2</span>
+                <h3>Escanea el voucher</h3>
+                <p>Toma una foto del comprobante de separación. El OCR lee el monto, la fecha y el N° de operación; tú solo confirmas.</p>
+              </div>
+            </li>
+            <li class="step reveal" data-step="3">
+              <span class="step__num" aria-hidden="true">3</span>
+              <div class="step__body">
+                <span class="step__label">Paso 3</span>
+                <h3>Se sincroniza con tu oficina</h3>
+                <p>Al recuperar la conexión, la separación y el voucher llegan solos al sistema central, listos para la conciliación.</p>
+              </div>
+            </li>
+          </ol>
+
+          <!-- Teléfono fijo: la pantalla cambia según el paso activo -->
+          <div class="how__visual" aria-hidden="true">
+            <div class="phone phone--how">
+              <div class="phone__screen how-screens">
+
+                <div class="how-screen is-active" data-screen="1">
+                  <div class="app-bar">
+                    <span class="app-bar__time">10:42</span>
+                    <span class="chip chip--offline"><span class="chip__dot"></span>Sin conexión</span>
+                  </div>
+                  <p class="app-head__title">Nueva separación</p>
+                  <div class="form-mock">
+                    <div class="form-mock__field"><span>Cliente</span><strong>María T.</strong></div>
+                    <div class="form-mock__field"><span>Proyecto</span><strong>Las Lomas · Etapa 2</strong></div>
+                    <div class="form-mock__field"><span>Lote</span><strong>B-14 · 120 m²</strong></div>
+                    <div class="form-mock__field"><span>Separación</span><strong>S/ 1,500.00</strong></div>
+                  </div>
+                  <span class="form-mock__btn">Guardar sin conexión</span>
+                  <p class="how-screen__foot">✓ Guardado en el dispositivo</p>
+                </div>
+
+                <div class="how-screen" data-screen="2">
+                  <div class="app-bar">
+                    <span class="app-bar__time">10:44</span>
+                    <span class="chip chip--offline"><span class="chip__dot"></span>Sin conexión</span>
+                  </div>
+                  <p class="app-head__title">Escanear voucher</p>
+                  <div class="viewfinder">
+                    <span class="voucher__corner voucher__corner--tl"></span>
+                    <span class="voucher__corner voucher__corner--tr"></span>
+                    <span class="voucher__corner voucher__corner--bl"></span>
+                    <span class="voucher__corner voucher__corner--br"></span>
+                    <div class="voucher__paper">
+                      <span></span><span></span><span></span><span></span>
+                    </div>
+                    <span class="viewfinder__line"></span>
+                  </div>
+                  <dl class="voucher__fields how-fields">
+                    <div><dt>Monto</dt><dd>S/ 1,500.00</dd></div>
+                    <div><dt>Fecha</dt><dd>08/10/2026</dd></div>
+                    <div><dt>N° operación</dt><dd>004812736</dd></div>
+                  </dl>
+                  <span class="form-mock__btn">Confirmar datos</span>
+                </div>
+
+                <div class="how-screen" data-screen="3">
+                  <div class="app-bar">
+                    <span class="app-bar__time">12:15</span>
+                    <span class="chip chip--ok"><span class="chip__dot"></span>En línea</span>
+                  </div>
+                  <div class="synced">
+                    <span class="synced__check">✓</span>
+                    <p class="synced__title">Sincronizado</p>
+                    <p class="synced__sub">Enviado a la oficina central</p>
+                  </div>
+                  <ul class="synced__list" role="list">
+                    <li><span>Separación lote B-14</span><b>✓</b></li>
+                    <li><span>Voucher S/ 1,500.00</span><b>✓</b></li>
+                    <li><span>Prospecto María T.</span><b>✓</b></li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Para quién ===== -->
+    <section class="section section--alt section--sheet segments" id="para-quien" aria-labelledby="segments-title">
+      <div class="container">
+        <div class="section-head section-head--center reveal">
+          <span class="eyebrow">Para quién</span>
+          <h2 id="segments-title">Pensado para quien vende y para quien compra</h2>
+          <p class="lead">Una app de campo para tu equipo comercial y un portal web de autoservicio para tus compradores.</p>
+        </div>
+
+        <div class="segments__grid">
+          <article class="segment segment--agents reveal" aria-labelledby="agents-title">
+            <span class="segment__tag">App móvil · Inmobiliarias y agentes</span>
+            <h3 id="agents-title">Vende más rápido, sin papeleo</h3>
+            <p class="segment__intro">Para agentes comerciales que trabajan en proyectos alejados, con poca o ninguna señal.</p>
+            <ul class="check-list" role="list">
+              <li>Catálogo y plano del proyecto disponibles sin internet</li>
+              <li>Registro de prospectos y separación del lote en el terreno</li>
+              <li>Foto del voucher con lectura automática por OCR</li>
+              <li>Aviso si otro agente ya vendió el lote, para reubicar al cliente</li>
+            </ul>
+            <a class="btn btn--primary btn--lg segment__cta" href="#demo">Solicitar demo gratuita</a>
+          </article>
+
+          <article class="segment segment--buyers reveal" id="compradores" aria-labelledby="buyers-title">
+            <span class="segment__tag">Portal web · Compradores e inversionistas</span>
+            <h3 id="buyers-title">Compra tu lote con total transparencia</h3>
+            <p class="segment__intro">Para familias, profesionales e inversionistas que quieren seguir su compra sin depender de llamadas ni chats.</p>
+            <ul class="check-list" role="list">
+              <li>Explora proyectos por ubicación, dimensiones y precio</li>
+              <li>Simula tu financiamiento y descarga la cotización en PDF</li>
+              <li>Revisa tu contrato digital antes de firmar</li>
+              <li>Consulta tu estado de cuenta y recibe alertas de tus cuotas</li>
+            </ul>
+            <a class="btn btn--ghost btn--lg segment__cta" href="#demo">Avísame cuando abra el portal</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Comparativa ===== -->
+    <section class="section compare" id="comparativa" aria-labelledby="compare-title">
+      <div class="container">
+        <div class="section-head section-head--center reveal">
+          <span class="eyebrow">Por qué inmoNode</span>
+          <h2 id="compare-title">Hecho para el terreno, no solo para la oficina</h2>
+          <p class="lead">Los CRM tradicionales asumen conexión permanente y trabajo de escritorio. inmoNode parte del trabajo en campo.</p>
+        </div>
+
+        <div class="compare__wrap reveal">
+          <table class="compare__table">
+            <caption class="visually-hidden">Comparación entre inmoNode y un CRM inmobiliario tradicional</caption>
+            <thead>
+              <tr>
+                <th scope="col"><span class="visually-hidden">Característica</span></th>
+                <th scope="col" class="compare__brand">inmoNode</th>
+                <th scope="col">CRM tradicional</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Trabajo en el terreno sin internet</th>
+                <td data-label="inmoNode"><span class="mark mark--yes" aria-hidden="true">✓</span>Modo offline con base local</td>
+                <td data-label="CRM tradicional"><span class="mark mark--no" aria-hidden="true">✕</span>Depende de la conexión</td>
+              </tr>
+              <tr>
+                <th scope="row">Registro de vouchers de pago</th>
+                <td data-label="inmoNode"><span class="mark mark--yes" aria-hidden="true">✓</span>Lectura automática con OCR</td>
+                <td data-label="CRM tradicional"><span class="mark mark--no" aria-hidden="true">✕</span>Transcripción manual</td>
+              </tr>
+              <tr>
+                <th scope="row">Venta de lotes</th>
+                <td data-label="inmoNode"><span class="mark mark--yes" aria-hidden="true">✓</span>Planos, manzanas y separaciones de fábrica</td>
+                <td data-label="CRM tradicional"><span class="mark mark--partial" aria-hidden="true">~</span>Requiere personalización</td>
+              </tr>
+              <tr>
+                <th scope="row">Disponibilidad entre agentes</th>
+                <td data-label="inmoNode"><span class="mark mark--yes" aria-hidden="true">✓</span>Sincronización con aviso de conflictos</td>
+                <td data-label="CRM tradicional"><span class="mark mark--no" aria-hidden="true">✕</span>Grupos de WhatsApp y avisos verbales</td>
+              </tr>
+              <tr>
+                <th scope="row">Costo para promotoras emergentes</th>
+                <td data-label="inmoNode"><span class="mark mark--yes" aria-hidden="true">✓</span>Suscripción según tu número de agentes</td>
+                <td data-label="CRM tradicional"><span class="mark mark--partial" aria-hidden="true">~</span>Pensado para grandes carteras</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="compare__note">Comparación basada en el análisis competitivo del informe del proyecto.</p>
+      </div>
+    </section>
+
+    <!-- ===== Lo que escuchamos (hallazgos de entrevistas) ===== -->
+    <section class="section section--dark section--sheet insights" id="investigacion" aria-labelledby="insights-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Lo que escuchamos</span>
+          <h2 id="insights-title">Hablamos con agentes y compradores antes de diseñar</h2>
+          <p class="lead">Estos hallazgos salen de nuestras entrevistas a agentes comerciales de campo y a compradores e inversionistas.</p>
+        </div>
+
+        <ul class="insights__grid" role="list">
+          <li class="insight reveal">
+            <span class="insight__tag">Agentes de campo</span>
+            <h3>La señal falla justo donde se cierra la venta</h3>
+            <p>Los agentes emiten recibos provisionales a mano y coordinan la disponibilidad por WhatsApp. Después, la oficina concilia cada pago manualmente.</p>
+            <p class="insight__answer">Modo offline y sincronización automática</p>
+          </li>
+          <li class="insight reveal">
+            <span class="insight__tag">Agentes de campo</span>
+            <h3>Los datos se pierden entre el terreno y la oficina</h3>
+            <p>Sin un flujo estándar, a los asesores nuevos se les pasan fotos del DNI, el estado civil o cambios en el financiamiento, y la reserva formal se retrasa.</p>
+            <p class="insight__answer">Expediente digital desde el terreno</p>
+          </li>
+          <li class="insight reveal">
+            <span class="insight__tag insight__tag--buyers">Compradores</span>
+            <h3>La confianza se gana con transparencia</h3>
+            <p>Temen que sus comprobantes se pierdan en el chat o que el asesor cambie de número, y llaman una y otra vez para pedir copias de su contrato.</p>
+            <p class="insight__answer">Portal con contratos, pagos y alertas</p>
+          </li>
+        </ul>
+
+        <p class="insights__note">Hallazgos resumidos del análisis de entrevistas del informe del proyecto (2026).</p>
+      </div>
+    </section>
+
+    <!-- ===== Planes ===== -->
+    <section class="section section--alt section--sheet pricing" id="planes" aria-labelledby="pricing-title">
+      <div class="container">
+        <div class="section-head section-head--center reveal">
+          <span class="eyebrow">Planes</span>
+          <h2 id="pricing-title">Un plan para cada etapa de tu inmobiliaria</h2>
+          <p class="lead">Suscripción según tu número de agentes y el volumen de vouchers que procesas. Te armamos una cotización a tu medida.</p>
+        </div>
+
+        <ul class="pricing__grid" role="list">
+          <li class="plan reveal">
+            <h3 class="plan__name">Inicial</h3>
+            <p class="plan__for">Un proyecto y un equipo comercial pequeño.</p>
+            <p class="plan__price">A cotizar <span>según agentes y volumen OCR</span></p>
+            <ul class="check-list" role="list">
+              <li>App offline con catálogo y plano</li>
+              <li>Registro de prospectos y separaciones</li>
+              <li>Lectura OCR de vouchers</li>
+              <li>Repositorio digital de documentos</li>
+            </ul>
+            <a class="btn btn--ghost plan__cta" href="#demo">Cotizar plan Inicial</a>
+          </li>
+
+          <li class="plan plan--featured reveal">
+            <span class="plan__badge">Recomendado</span>
+            <h3 class="plan__name">Profesional</h3>
+            <p class="plan__for">Varios proyectos y equipos en crecimiento.</p>
+            <p class="plan__price">A cotizar <span>según agentes y volumen OCR</span></p>
+            <ul class="check-list" role="list">
+              <li>Todo lo del plan Inicial</li>
+              <li>Mayor volumen de lectura OCR</li>
+              <li>Aviso de conflictos de disponibilidad</li>
+              <li>Portal web para tus compradores</li>
+            </ul>
+            <a class="btn btn--primary plan__cta" href="#demo">Cotizar plan Profesional</a>
+          </li>
+
+          <li class="plan reveal">
+            <h3 class="plan__name">Empresa</h3>
+            <p class="plan__for">Varias sedes, etapas y alto volumen de vouchers.</p>
+            <p class="plan__price">A cotizar <span>según agentes y volumen OCR</span></p>
+            <ul class="check-list" role="list">
+              <li>Todo lo del plan Profesional</li>
+              <li>Volumen de OCR a medida</li>
+              <li>Convive con tu sistema contable actual</li>
+              <li>Capacitación práctica para tu equipo</li>
+            </ul>
+            <a class="btn btn--ghost plan__cta" href="#demo">Cotizar plan Empresa</a>
+          </li>
+        </ul>
+
+        <div class="pilot reveal">
+          <div>
+            <p class="pilot__title">¿Prefieres probarlo primero?</p>
+            <p class="pilot__text">Hacemos un piloto gratuito en tu proyecto de lotización para que tu equipo registre ventas reales sin conexión.</p>
+          </div>
+          <a class="link-arrow" href="#demo">Solicitar piloto gratuito</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Equipo ===== -->
+    <section class="section team" id="equipo" aria-labelledby="team-title">
+      <div class="container">
+        <div class="section-head section-head--center reveal">
+          <span class="eyebrow">Nuestro equipo</span>
+          <h2 id="team-title">Somos NovaCorp</h2>
+          <p class="lead">Cinco estudiantes de Ingeniería de Software de la UPC que construyen inmoNode para modernizar la venta de lotes.</p>
+        </div>
+
+        <ul class="team__grid" role="list">
+          <li class="member reveal">
+            <img class="member__photo" src="assets/img/team/becker.jpg" alt="Foto de Becker Caisahuana" width="240" height="240" loading="lazy">
+            <h3 class="member__name">Becker Caisahuana</h3>
+            <p class="member__role">Datos y persistencia</p>
+            <p class="member__bio">Diseña el modelo de datos y apoya los servicios internos para que cada registro se guarde de forma segura.</p>
+          </li>
+          <li class="member reveal">
+            <img class="member__photo" src="assets/img/team/mia.jpg" alt="Foto de Mía Capillo" width="240" height="240" loading="lazy">
+            <h3 class="member__name">Mía Capillo</h3>
+            <p class="member__role">Diseño UX/UI y accesibilidad</p>
+            <p class="member__bio">Crea la experiencia visual para que la plataforma sea intuitiva, atractiva e inclusiva.</p>
+          </li>
+          <li class="member reveal">
+            <img class="member__photo" src="assets/img/team/andy.jpg" alt="Foto de Andy Nuñez" width="240" height="240" loading="lazy">
+            <h3 class="member__name">Andy Nuñez</h3>
+            <p class="member__role">Desarrollo frontend</p>
+            <p class="member__bio">Convierte los diseños en componentes funcionales y fluidos conectados con los servicios.</p>
+          </li>
+          <li class="member reveal">
+            <img class="member__photo" src="assets/img/team/breithner.jpg" alt="Foto de Breithner Perez" width="240" height="240" loading="lazy">
+            <h3 class="member__name">Breithner Perez</h3>
+            <p class="member__role">Calidad y despliegue</p>
+            <p class="member__bio">Cuida las convenciones del código, el control de versiones y la publicación de la aplicación.</p>
+          </li>
+          <li class="member reveal">
+            <img class="member__photo" src="assets/img/team/angel.jpg" alt="Foto de Angel Rocca" width="240" height="240" loading="lazy">
+            <h3 class="member__name">Angel Rocca</h3>
+            <p class="member__role">Arquitectura y OCR</p>
+            <p class="member__bio">Define la arquitectura del sistema y lidera la integración del OCR para validar vouchers.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== Preguntas frecuentes ===== -->
+    <section class="section section--alt faq" id="faq" aria-labelledby="faq-title">
+      <div class="container faq__layout">
+        <div class="faq__intro reveal">
+          <span class="eyebrow">Preguntas frecuentes</span>
+          <h2 id="faq-title">Lo que suelen preguntarnos</h2>
+          <p class="lead">¿No encuentras tu respuesta? Escríbenos y te la resolvemos en la demo.</p>
+          <a class="link-arrow" href="#demo">Hablar con el equipo</a>
+        </div>
+
+        <div class="faq__list reveal">
+          <details class="faq-item" name="faq" open>
+            <summary>¿La app funciona realmente sin internet?</summary>
+            <p>Sí. Al iniciar sesión descargas el catálogo de lotes y el plano del proyecto. Desde ahí registras prospectos, separaciones y vouchers sin señal; todo se guarda en una base local del teléfono.</p>
+          </details>
+          <details class="faq-item" name="faq">
+            <summary>¿Qué pasa si el OCR lee mal un número?</summary>
+            <p>Antes de guardar ves los datos extraídos (monto, fecha y N° de operación) y puedes corregir cualquiera a mano. Siempre confirmas tú.</p>
+          </details>
+          <details class="faq-item" name="faq">
+            <summary>¿Y si dos agentes separan el mismo lote sin conexión?</summary>
+            <p>Al sincronizar, inmoNode detecta el conflicto y avisa al agente para que reubique al cliente en otro lote disponible.</p>
+          </details>
+          <details class="faq-item" name="faq">
+            <summary>¿Tengo que dejar mi sistema contable actual?</summary>
+            <p>No. inmoNode funciona como complemento: digitaliza la venta en campo y los comprobantes, y convive con los sistemas que ya usas.</p>
+          </details>
+          <details class="faq-item" name="faq">
+            <summary>¿Dónde se guardan los documentos y vouchers?</summary>
+            <p>En un repositorio central en la nube de Amazon Web Services (región São Paulo, la más cercana al Perú), en almacenamiento privado y con respaldo diario de la base de datos.</p>
+          </details>
+          <details class="faq-item" name="faq">
+            <summary>¿En qué dispositivos funciona?</summary>
+            <p>La app de campo funciona en teléfonos Android y el portal web en cualquier navegador, desde la computadora o el celular.</p>
+          </details>
+          <details class="faq-item" name="faq">
+            <summary>¿Cómo se cobra inmoNode?</summary>
+            <p>Con una suscripción según el número de agentes y el volumen de vouchers procesados con OCR. Te enviamos una cotización a tu medida y también ofrecemos un piloto gratuito.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Solicitar demo ===== -->
+    <section class="section section--dark section--sheet demo" id="demo" aria-labelledby="demo-title">
+      <div class="container demo__layout">
+        <div class="demo__copy reveal">
+          <span class="eyebrow">Demo gratuita</span>
+          <h2 id="demo-title">Deja el papel en tu próximo proyecto</h2>
+          <p class="lead">Agenda una demo gratuita y te mostramos cómo registrar una separación sin señal, de principio a fin.</p>
+          <ul class="check-list demo__perks" role="list">
+            <li>Piloto gratuito</li>
+            <li>Sin compromiso</li>
+          </ul>
+        </div>
+
+        <div class="demo__card reveal">
+          <form class="demo-form" id="demo-form" novalidate>
+            <div class="field">
+              <label class="field__label" for="demo-name">Nombre</label>
+              <input class="field__input" id="demo-name" name="name" type="text" autocomplete="name" required aria-describedby="demo-name-error">
+              <p class="field__error" id="demo-name-error"></p>
+            </div>
+            <div class="field">
+              <label class="field__label" for="demo-email">Correo</label>
+              <input class="field__input" id="demo-email" name="email" type="email" autocomplete="email" inputmode="email" required aria-describedby="demo-email-error">
+              <p class="field__error" id="demo-email-error"></p>
+            </div>
+            <button class="btn btn--primary btn--lg demo-form__submit" type="submit">Solicitar mi demo</button>
+            <p class="demo-form__note">Al enviar aceptas nuestra <a href="privacidad.html">Política de privacidad</a>. Solo usaremos tus datos para coordinar la demo.</p>
+          </form>
+
+          <!-- El mensaje de éxito se inserta aquí al enviar -->
+          <div class="demo-success" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div class="site-footer__brand">
+        <a class="logo" href="#inicio" aria-label="inmoNode, ir al inicio">
+          <svg class="logo__mark" viewBox="0 0 48 48" aria-hidden="true">
+            <path d="M4 32 24 22l20 10-20 10z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+            <path d="M10 32 24 25l6.2 3.1-14 7z" fill="#4cc46a"/>
+            <path d="M19 36.6 33 29.6l5 2.4-14 7z" fill="#4cc46a"/>
+            <path d="M24 2c-6 0-10.8 4.7-10.8 10.5C13.2 20.2 24 28.6 24 28.6s10.8-8.4 10.8-16.1C34.8 6.7 30 2 24 2z" fill="currentColor"/>
+            <circle cx="24" cy="12.4" r="4.2" fill="var(--logo-hole, #0f161d)"/>
+          </svg>
+          <span class="logo__text">Inmo<span class="logo__accent">Node</span></span>
+        </a>
+        <p class="site-footer__tagline">Venta de lotes sin papel, aunque no haya señal.</p>
+      </div>
+
+      <nav class="site-footer__nav" aria-label="Pie de página">
+        <ul class="site-footer__links" role="list">
           <li><a href="#solucion">Solución</a></li>
           <li><a href="#como-funciona">Cómo funciona</a></li>
           <li><a href="#compradores">Compradores</a></li>
@@ -64,273 +755,19 @@
           <li><a href="#faq">FAQ</a></li>
         </ul>
       </nav>
-      <div class="site-header-actions">
-        <a class="btn btn-primary" href="#demo" aria-label="Solicitar demo">
-          <span class="label-wide">Solicitar demo</span>
-          <span class="label-narrow">Demo</span>
-        </a>
+
+      <div class="site-footer__bottom">
+        <p>NovaCorp · Proyecto académico UPC · 2026</p>
+        <a class="site-footer__report" href="https://github.com/1ACC0238-2620-13981-NovaCorp-InmoNode/InmoNode-Project-Report" target="_blank" rel="noopener">Reporte del proyecto en GitHub</a>
+        <a class="site-footer__report" href="privacidad.html">Política de privacidad</a>
+        <p>© <span data-year>2026</span> NovaCorp</p>
       </div>
     </div>
-  </header>
+  </footer>
 
-  <main id="main">
-    <section class="hero section-dark" id="inicio">
-      <div class="container hero-inner">
-        <div class="hero-copy">
-          <p class="chip chip-outline hero-chip"><span class="status-dot"></span>App offline + OCR para venta de lotes</p>
-          <h1 class="hero-title">Vende lotes en campo, <span class="text-accent">aunque no haya señal</span></h1>
-          <p class="hero-lead">inmoNode registra prospectos y separaciones sin internet, lee tus vouchers con OCR en segundos y sincroniza todo con tu oficina al recuperar conexión.</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary btn-large" href="#demo">Solicitar demo gratuita</a>
-            <a class="link-arrow" href="#proyectos">¿Buscas un lote? Ver proyectos <svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg></a>
-          </div>
-          <p class="hero-note">Piloto gratuito en tu proyecto de lotización.</p>
-        </div>
-
-        <div class="hero-visual" aria-hidden="true">
-          <div class="phone">
-            <div class="phone-status"><span>10:42</span><span class="chip chip-offline">• Sin conexión</span></div>
-            <p class="phone-title">Las Lomas · Etapa 2</p>
-            <div class="scanner"><div class="voucher"><span></span><span></span><span></span></div></div>
-            <p class="phone-label">Voucher leído con OCR</p>
-            <dl class="data-list">
-              <div class="data-row"><dt>Monto</dt><dd>S/ 1,500.00</dd></div>
-              <div class="data-row"><dt>Fecha</dt><dd>08/10/2026</dd></div>
-              <div class="data-row"><dt>N° operación</dt><dd>004812736</dd></div>
-            </dl>
-            <div class="lot-item">
-              <span class="lot-code">B-14</span>
-              <span class="lot-info"><strong>Lote 14 · Mz. B</strong>120 m² · Registrado</span>
-              <span class="chip chip-saved">Separado</span>
-            </div>
-            <p class="phone-banner">3 registros pendientes de sincronizar</p>
-          </div>
-          <div class="float-card float-card-saved">
-            <span class="float-card-icon"><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg></span>
-            <span><strong>Lote B-14 separado</strong>Guardado en el dispositivo</span>
-          </div>
-          <div class="float-card float-card-sync">
-            <span class="float-card-icon"><svg class="icon" aria-hidden="true"><use href="#icon-sync"/></svg></span>
-            <span><strong>Sincronización automática</strong>Al volver la señal</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="problema">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">El problema</p>
-          <h2>Vender lotes en campo todavía depende del papel</h2>
-          <p class="lead">En los proyectos alejados de la ciudad no hay señal. La información viaja en recibos a mano, fotos por WhatsApp y vouchers que se borran.</p>
-        </div>
-
-        <ol class="problem-grid">
-          <li class="card problem-card">
-            <span class="icon-box icon-box-danger"><svg class="icon" aria-hidden="true"><use href="#icon-signal-off"/></svg></span>
-            <h3>Sin señal en el terreno</h3>
-            <p>La disponibilidad de lotes se coordina por WhatsApp o de palabra, y los datos del cliente se anotan en papel para digitalizarlos después en la oficina.</p>
-          </li>
-          <li class="card problem-card">
-            <span class="icon-box icon-box-danger"><svg class="icon" aria-hidden="true"><use href="#icon-receipt"/></svg></span>
-            <h3>Vouchers que se borran o se pierden</h3>
-            <p>El papel térmico se deteriora y el riesgo de extravío en el traslado llega hasta 20%. Luego, la oficina concilia cada pago a mano.</p>
-          </li>
-          <li class="card problem-card">
-            <span class="icon-box icon-box-danger"><svg class="icon" aria-hidden="true"><use href="#icon-eye-off"/></svg></span>
-            <h3>Compradores sin visibilidad</h3>
-            <p>Envían comprobantes por chat y llaman para pedir copias de su contrato. Sin transparencia crece el temor a la informalidad y la compra se frena.</p>
-          </li>
-        </ol>
-
-        <figure class="stat-banner">
-          <blockquote>Hasta <strong>20% de la productividad administrativa</strong> de los equipos de venta se pierde por el papel y la doble digitación.</blockquote>
-          <figcaption>McKinsey &amp; Company, Automation in Real Estate (2021), citado en el informe del proyecto.</figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <section class="section section-white" id="solucion">
-      <div class="container">
-        <h2 class="visually-hidden">La solución de inmoNode</h2>
-        <div class="solution-grid">
-          <article class="card card-dark solution-card solution-card-offline">
-            <span class="icon-box"><svg class="icon" aria-hidden="true"><use href="#icon-phone"/></svg></span>
-            <h3>Modo offline con base local</h3>
-            <p>Registra prospectos, consulta el plano y separa lotes sin señal. Todo se guarda en el dispositivo y nada se pierde.</p>
-            <p class="state-flow">
-              <span class="chip chip-offline">• Sin conexión</span>
-              <svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg>
-              <span class="chip chip-saved">✓ Guardado en el dispositivo</span>
-            </p>
-            <ul class="chip-row">
-              <li class="chip chip-outline">Catálogo de lotes</li>
-              <li class="chip chip-outline">Plano del proyecto</li>
-              <li class="chip chip-outline">Separación in situ</li>
-            </ul>
-          </article>
-
-          <article class="card solution-card solution-card-ocr">
-            <span class="icon-box"><svg class="icon" aria-hidden="true"><use href="#icon-scan"/></svg></span>
-            <h3>Vouchers leídos con OCR</h3>
-            <p>Toma una foto y inmoNode extrae los datos del pago. Si algo sale mal, lo corriges en un toque.</p>
-            <dl class="data-list ocr-result">
-              <div class="data-row"><dt>Monto</dt><dd>S/ 1,500.00</dd></div>
-              <div class="data-row"><dt>Fecha</dt><dd>08/10/2026</dd></div>
-              <div class="data-row"><dt>N° operación</dt><dd>004812736</dd></div>
-            </dl>
-          </article>
-
-          <article class="card solution-card solution-card-sync">
-            <span class="icon-box"><svg class="icon" aria-hidden="true"><use href="#icon-sync"/></svg></span>
-            <h3>Sincronización automática</h3>
-            <p>Al volver la señal, los registros llegan solos a la oficina. Si otro agente ya vendió el lote, te avisamos.</p>
-            <div class="sync-progress" aria-hidden="true">
-              <p><span>Sincronizando</span><span>3 de 3</span></p>
-              <span class="progress-bar"></span>
-            </div>
-          </article>
-
-          <article class="card solution-card solution-card-repository">
-            <span class="icon-box"><svg class="icon" aria-hidden="true"><use href="#icon-folder"/></svg></span>
-            <h3>Repositorio digital centralizado</h3>
-            <p>Contratos, vouchers y estados de cuenta en un solo lugar seguro en la nube, listos para la conciliación y las auditorías.</p>
-            <ul class="file-row" aria-hidden="true">
-              <li class="file-chip"><span>PDF</span>Contrato_B-14</li>
-              <li class="file-chip"><span>JPG</span>Voucher_separación</li>
-              <li class="file-chip"><span>PDF</span>Estado_de_cuenta</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-dark" id="como-funciona">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">Cómo funciona</p>
-          <h2>Del terreno a tu oficina en 3 pasos</h2>
-          <p class="lead">Sin papel, sin digitar dos veces y sin depender de la señal.</p>
-        </div>
-
-        <div class="steps-layout">
-          <ol class="steps">
-            <li class="step is-active">
-              <button class="step-button" type="button" aria-controls="step-screen-1" aria-pressed="true">
-                <span class="step-number">1</span>
-                <span class="step-body">
-                  <span class="step-label">Paso 1</span>
-                  <span class="step-title">Registra en campo, aunque no haya señal</span>
-                  <span class="step-text">Abre el catálogo y el plano descargados, registra al prospecto y separa el lote. Todo queda guardado en el teléfono.</span>
-                </span>
-              </button>
-            </li>
-            <li class="step">
-              <button class="step-button" type="button" aria-controls="step-screen-2" aria-pressed="false">
-                <span class="step-number">2</span>
-                <span class="step-body">
-                  <span class="step-label">Paso 2</span>
-                  <span class="step-title">Fotografía el voucher y deja que el OCR lo lea</span>
-                  <span class="step-text">inmoNode extrae el monto, la fecha y el número de operación. Tú solo revisas y confirmas.</span>
-                </span>
-              </button>
-            </li>
-            <li class="step">
-              <button class="step-button" type="button" aria-controls="step-screen-3" aria-pressed="false">
-                <span class="step-number">3</span>
-                <span class="step-body">
-                  <span class="step-label">Paso 3</span>
-                  <span class="step-title">Sincroniza con tu oficina al recuperar señal</span>
-                  <span class="step-text">Los registros pendientes se envían solos. Si otro agente ya separó el lote, recibes el aviso para reubicar a tu cliente.</span>
-                </span>
-              </button>
-            </li>
-          </ol>
-
-          <div class="steps-visual">
-            <div class="phone">
-              <div class="phone-screen" id="step-screen-1">
-                <div class="phone-status"><span>10:42</span><span class="chip chip-offline">• Sin conexión</span></div>
-                <p class="phone-title">Nueva separación</p>
-                <dl class="phone-fields">
-                  <div><dt>Cliente</dt><dd>María T.</dd></div>
-                  <div><dt>Proyecto</dt><dd>Las Lomas · Etapa 2</dd></div>
-                  <div><dt>Lote</dt><dd>B-14 · 120 m²</dd></div>
-                  <div><dt>Separación</dt><dd>S/ 1,500.00</dd></div>
-                </dl>
-                <p class="phone-action">Guardar sin conexión</p>
-                <p class="phone-caption">✓ Guardado en el dispositivo</p>
-              </div>
-              <div class="phone-screen" id="step-screen-2" hidden>
-                <div class="phone-status"><span>10:44</span><span class="chip chip-offline">• Sin conexión</span></div>
-                <p class="phone-title">Escanear voucher</p>
-                <div class="scanner"><div class="voucher"><span></span><span></span><span></span></div></div>
-                <dl class="data-list">
-                  <div class="data-row"><dt>Monto</dt><dd>S/ 1,500.00</dd></div>
-                  <div class="data-row"><dt>Fecha</dt><dd>08/10/2026</dd></div>
-                  <div class="data-row"><dt>N° operación</dt><dd>004812736</dd></div>
-                </dl>
-                <p class="phone-action">Confirmar datos</p>
-                <p class="phone-caption">✓ Voucher leído con OCR</p>
-              </div>
-              <div class="phone-screen" id="step-screen-3" hidden>
-                <div class="phone-status"><span>17:05</span><span class="chip chip-saved">• En línea</span></div>
-                <p class="phone-title">Sincronización</p>
-                <ul class="sync-queue">
-                  <li><span><strong>Prospecto</strong>María T.</span><span class="chip chip-saved">Enviado</span></li>
-                  <li><span><strong>Separación</strong>Lote B-14</span><span class="chip chip-saved">Enviado</span></li>
-                  <li><span><strong>Voucher</strong>N° 004812736</span><span class="chip chip-saved">Enviado</span></li>
-                </ul>
-                <div class="sync-progress">
-                  <p><span>Sincronizando</span><span>3 de 3</span></p>
-                  <span class="progress-bar"></span>
-                </div>
-                <p class="phone-caption">✓ Tu oficina ya tiene los registros</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="compradores">
-      <div class="container">
-        <div class="section-heading section-heading-centered">
-          <p class="eyebrow">Para quién</p>
-          <h2>Pensado para quien vende y para quien compra</h2>
-          <p class="lead">Una app de campo para tu equipo comercial y un portal web de autoservicio para tus compradores.</p>
-        </div>
-
-        <div class="audience-grid">
-          <article class="card card-dark audience-card">
-            <p class="chip chip-saved">App móvil · Inmobiliarias y agentes</p>
-            <h3>Vende más rápido, sin papeleo</h3>
-            <p>Para agentes comerciales que trabajan en proyectos alejados, con poca o ninguna señal.</p>
-            <ul class="check-list">
-              <li>Catálogo y plano del proyecto disponibles sin internet</li>
-              <li>Registro de prospectos y separación del lote en el terreno</li>
-              <li>Foto del voucher con lectura automática por OCR</li>
-              <li>Aviso si otro agente ya vendió el lote, para reubicar al cliente</li>
-            </ul>
-            <a class="btn btn-primary" href="#demo">Solicitar demo gratuita</a>
-          </article>
-
-          <article class="card audience-card">
-            <p class="chip chip-tint">Portal web · Compradores e inversionistas</p>
-            <h3>Compra tu lote con total transparencia</h3>
-            <p>Para familias, profesionales e inversionistas que quieren seguir su compra sin depender de llamadas ni chats.</p>
-            <ul class="check-list">
-              <li>Explora proyectos por ubicación, dimensiones y precio</li>
-              <li>Simula tu financiamiento y descarga la cotización en PDF</li>
-              <li>Revisa tu contrato digital antes de firmar</li>
-              <li>Consulta tu estado de cuenta y recibe alertas de tus cuotas</li>
-            </ul>
-            <a class="btn btn-outline" href="#demo" data-app-path="/register">Avísame cuando abra el portal</a>
-          </article>
-        </div>
-      </div>
-    </section>
-  </main>
-
+  <!-- CTA fijo en móvil: aparece al salir del hero -->
+  <div class="sticky-cta">
+    <a class="btn btn--primary btn--lg sticky-cta__btn" href="#demo">Solicitar demo gratuita</a>
+  </div>
 </body>
 </html>
