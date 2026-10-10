@@ -23,10 +23,132 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&display=swap">
   <link rel="stylesheet" href="assets/css/tokens.css">
   <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/sections.css">
 </head>
 <body data-app-url="">
+  <svg class="visually-hidden" aria-hidden="true" focusable="false">
+    <symbol id="logo-mark" viewBox="0 0 64 64">
+      <path fill="#87c757" d="M20 29.2 29.6 34 20 38.8 10.4 34z"/>
+      <path fill="#319a4b" d="M32 23.2 41.6 28 32 32.8 22.4 28zM44 29.2 53.6 34 44 38.8 34.4 34zM32 35.2 41.6 40 32 44.8 22.4 40z"/>
+      <path fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M8 41l24 12 24-12M8 47l24 12 24-12"/>
+      <path fill="currentColor" fill-rule="evenodd" d="M32 27c0 0-7.5-8.5-7.5-14.5a7.5 7.5 0 0 1 15 0C39.5 18.5 32 27 32 27zm0-11.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+    </symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+    <symbol id="icon-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="icon-signal-off" viewBox="0 0 24 24"><path d="M3 3l18 18M8.5 16.5a5 5 0 0 1 7 0M5 13a10 10 0 0 1 4-2.5M19 13a10 10 0 0 0-3.5-2.3M2 9.5a15 15 0 0 1 4-2.7M22 9.5a15 15 0 0 0-11-4.4M12 20h.01"/></symbol>
+    <symbol id="icon-receipt" viewBox="0 0 24 24"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2zM9 8h6M9 12h6"/></symbol>
+    <symbol id="icon-eye-off" viewBox="0 0 24 24"><path d="M3 3l18 18M10.5 5.2A9.5 9.5 0 0 1 12 5c5 0 8.5 4.5 9.5 7a13 13 0 0 1-2.6 3.7M6.3 6.6A13 13 0 0 0 2.5 12c1 2.5 4.5 7 9.5 7a9.5 9.5 0 0 0 4.2-1M9.9 10a3 3 0 0 0 4.1 4.1"/></symbol>
+    <symbol id="icon-phone" viewBox="0 0 24 24"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18h2"/></symbol>
+    <symbol id="icon-scan" viewBox="0 0 24 24"><path d="M4 8V5.5A1.5 1.5 0 0 1 5.5 4H8M16 4h2.5A1.5 1.5 0 0 1 20 5.5V8M20 16v2.5a1.5 1.5 0 0 1-1.5 1.5H16M8 20H5.5A1.5 1.5 0 0 1 4 18.5V16M8 12h8"/></symbol>
+    <symbol id="icon-sync" viewBox="0 0 24 24"><path d="M20 11a8 8 0 0 0-14.3-4.5L4 8.5M4 4v4.5h4.5M4 13a8 8 0 0 0 14.3 4.5l1.7-2M20 20v-4.5h-4.5"/></symbol>
+    <symbol id="icon-folder" viewBox="0 0 24 24"><path d="M3 7.5A1.5 1.5 0 0 1 4.5 6H9l2 2.5h8.5A1.5 1.5 0 0 1 21 10v7.5a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 17.5z"/></symbol>
+    <symbol id="icon-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="icon-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+    <symbol id="icon-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+    <symbol id="icon-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  </svg>
+
+  <header class="site-header">
+    <div class="container site-header-inner">
+      <a class="brand" href="#inicio" aria-label="InmoNode, ir al inicio">
+        <svg class="brand-mark" aria-hidden="true"><use href="#logo-mark"/></svg>
+        <span class="brand-name">Inmo<span>Node</span></span>
+      </a>
+      <nav class="site-nav" id="site-nav" aria-label="Principal">
+        <ul class="site-nav-list">
+          <li><a href="#solucion">Solución</a></li>
+          <li><a href="#como-funciona">Cómo funciona</a></li>
+          <li><a href="#compradores">Compradores</a></li>
+          <li><a href="#planes">Planes</a></li>
+          <li><a href="#equipo">Equipo</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </nav>
+      <div class="site-header-actions">
+        <a class="btn btn-primary" href="#demo" aria-label="Solicitar demo">
+          <span class="label-wide">Solicitar demo</span>
+          <span class="label-narrow">Demo</span>
+        </a>
+      </div>
+    </div>
+  </header>
 
   <main id="main">
+    <section class="hero section-dark" id="inicio">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="chip chip-outline hero-chip"><span class="status-dot"></span>App offline + OCR para venta de lotes</p>
+          <h1 class="hero-title">Vende lotes en campo, <span class="text-accent">aunque no haya señal</span></h1>
+          <p class="hero-lead">inmoNode registra prospectos y separaciones sin internet, lee tus vouchers con OCR en segundos y sincroniza todo con tu oficina al recuperar conexión.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary btn-large" href="#demo">Solicitar demo gratuita</a>
+            <a class="link-arrow" href="#proyectos">¿Buscas un lote? Ver proyectos <svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg></a>
+          </div>
+          <p class="hero-note">Piloto gratuito en tu proyecto de lotización.</p>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="phone">
+            <div class="phone-status"><span>10:42</span><span class="chip chip-offline">• Sin conexión</span></div>
+            <p class="phone-title">Las Lomas · Etapa 2</p>
+            <div class="scanner"><div class="voucher"><span></span><span></span><span></span></div></div>
+            <p class="phone-label">Voucher leído con OCR</p>
+            <dl class="data-list">
+              <div class="data-row"><dt>Monto</dt><dd>S/ 1,500.00</dd></div>
+              <div class="data-row"><dt>Fecha</dt><dd>08/10/2026</dd></div>
+              <div class="data-row"><dt>N° operación</dt><dd>004812736</dd></div>
+            </dl>
+            <div class="lot-item">
+              <span class="lot-code">B-14</span>
+              <span class="lot-info"><strong>Lote 14 · Mz. B</strong>120 m² · Registrado</span>
+              <span class="chip chip-saved">Separado</span>
+            </div>
+            <p class="phone-banner">3 registros pendientes de sincronizar</p>
+          </div>
+          <div class="float-card float-card-saved">
+            <span class="float-card-icon"><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg></span>
+            <span><strong>Lote B-14 separado</strong>Guardado en el dispositivo</span>
+          </div>
+          <div class="float-card float-card-sync">
+            <span class="float-card-icon"><svg class="icon" aria-hidden="true"><use href="#icon-sync"/></svg></span>
+            <span><strong>Sincronización automática</strong>Al volver la señal</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="problema">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">El problema</p>
+          <h2>Vender lotes en campo todavía depende del papel</h2>
+          <p class="lead">En los proyectos alejados de la ciudad no hay señal. La información viaja en recibos a mano, fotos por WhatsApp y vouchers que se borran.</p>
+        </div>
+
+        <ol class="problem-grid">
+          <li class="card problem-card">
+            <span class="icon-box icon-box-danger"><svg class="icon" aria-hidden="true"><use href="#icon-signal-off"/></svg></span>
+            <h3>Sin señal en el terreno</h3>
+            <p>La disponibilidad de lotes se coordina por WhatsApp o de palabra, y los datos del cliente se anotan en papel para digitalizarlos después en la oficina.</p>
+          </li>
+          <li class="card problem-card">
+            <span class="icon-box icon-box-danger"><svg class="icon" aria-hidden="true"><use href="#icon-receipt"/></svg></span>
+            <h3>Vouchers que se borran o se pierden</h3>
+            <p>El papel térmico se deteriora y el riesgo de extravío en el traslado llega hasta 20%. Luego, la oficina concilia cada pago a mano.</p>
+          </li>
+          <li class="card problem-card">
+            <span class="icon-box icon-box-danger"><svg class="icon" aria-hidden="true"><use href="#icon-eye-off"/></svg></span>
+            <h3>Compradores sin visibilidad</h3>
+            <p>Envían comprobantes por chat y llaman para pedir copias de su contrato. Sin transparencia crece el temor a la informalidad y la compra se frena.</p>
+          </li>
+        </ol>
+
+        <figure class="stat-banner">
+          <blockquote>Hasta <strong>20% de la productividad administrativa</strong> de los equipos de venta se pierde por el papel y la doble digitación.</blockquote>
+          <figcaption>McKinsey &amp; Company, Automation in Real Estate (2021), citado en el informe del proyecto.</figcaption>
+        </figure>
+      </div>
+    </section>
   </main>
 
 </body>
