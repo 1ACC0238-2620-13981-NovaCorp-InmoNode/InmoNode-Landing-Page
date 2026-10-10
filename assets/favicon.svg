@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="14" fill="#1b2530"/>
+  <!-- Parcela isométrica -->
+  <path d="M8 42 32 30l24 12-24 12z" fill="#0f161d" stroke="#eef3f0" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M15 42 32 33.5 39.5 37.3 22.5 45.8z" fill="#4cc46a"/>
+  <path d="M26 47.5 43 39l6 3-17 8.5z" fill="#4cc46a"/>
+  <!-- Pin -->
+  <path d="M32 6c-7.2 0-13 5.6-13 12.6C19 27.8 32 38 32 38s13-10.2 13-19.4C45 11.6 39.2 6 32 6z" fill="#eef3f0"/>
+  <circle cx="32" cy="18.5" r="5" fill="#1b2530"/>
+</svg>
