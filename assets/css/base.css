@@ -1,0 +1,366 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--header-height);
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  font-size: var(--font-size-body);
+  line-height: 1.6;
+  color: var(--color-ink);
+  background: var(--color-surface);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+p,
+ul,
+ol,
+dl,
+dd,
+figure {
+  margin: 0;
+}
+
+ul,
+ol {
+  padding: 0;
+  list-style: none;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+}
+
+button,
+input {
+  font: inherit;
+  color: inherit;
+}
+
+h1,
+h2 {
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+}
+
+h3 {
+  font-size: var(--font-size-h3);
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* Layout */
+
+.container {
+  width: min(100% - 48px, 1136px);
+  margin-inline: auto;
+}
+
+.section {
+  padding-block: var(--space-8);
+}
+
+.section-white {
+  background: var(--color-white);
+}
+
+.section-dark {
+  color: var(--color-text-on-dark);
+  background: var(--color-ink);
+}
+
+.section-heading {
+  max-width: 640px;
+  margin-bottom: var(--space-6);
+}
+
+.section-heading-centered {
+  max-width: 800px;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.eyebrow {
+  margin-bottom: var(--space-2);
+  font-size: var(--font-size-small);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-primary-dark);
+}
+
+.section-dark .eyebrow {
+  color: var(--color-accent);
+}
+
+.lead {
+  margin-top: var(--space-2);
+  font-size: var(--font-size-lead);
+  color: var(--color-text-muted);
+}
+
+.section-dark .lead {
+  color: var(--color-text-on-dark-muted);
+}
+
+.footnote {
+  margin-top: var(--space-3);
+  font-size: var(--font-size-small);
+  color: var(--color-text-muted);
+}
+
+.section-dark .footnote {
+  color: var(--color-text-on-dark-muted);
+}
+
+/* Icons */
+
+.icon {
+  flex: none;
+  width: 24px;
+  height: 24px;
+  fill: none;
+  stroke: currentcolor;
+  stroke-width: 1.75;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.icon-box {
+  display: grid;
+  width: 48px;
+  height: 48px;
+  place-items: center;
+  color: var(--color-primary-dark);
+  background: var(--color-primary-tint);
+  border-radius: 12px;
+}
+
+.icon-box-danger {
+  color: var(--color-danger);
+  background: var(--color-danger-tint);
+}
+
+/* Buttons and links */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 4px var(--space-3) 0;
+  font-size: 1.1875rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: var(--radius-pill);
+  transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+.btn-primary {
+  color: var(--color-white);
+  background: var(--color-primary);
+  box-shadow: var(--shadow-button);
+}
+
+.btn-primary:hover {
+  background: var(--color-primary-dark);
+}
+
+.btn-outline {
+  color: var(--color-primary-dark);
+  background: transparent;
+  border-color: var(--color-primary);
+}
+
+.btn-outline:hover {
+  background: var(--color-primary-tint);
+}
+
+.btn-large {
+  min-height: 56px;
+}
+
+.btn-block {
+  width: 100%;
+  padding-inline: var(--space-2);
+}
+
+.link-arrow {
+  display: inline-flex;
+  gap: var(--space-1);
+  align-items: center;
+  min-height: 48px;
+  font-size: var(--font-size-lead);
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  text-decoration: none;
+}
+
+.link-arrow:hover {
+  text-decoration: underline;
+}
+
+.section-dark .link-arrow {
+  color: var(--color-accent);
+}
+
+/* Chips and badges */
+
+.chip {
+  display: inline-flex;
+  gap: var(--space-1);
+  align-items: center;
+  padding: 6px var(--space-2) 3px;
+  font-size: var(--font-size-small);
+  font-weight: 600;
+  line-height: 1.4;
+  border-radius: var(--radius-pill);
+}
+
+.chip-offline {
+  color: var(--color-warning);
+  background: rgb(240 246 110 / 12%);
+}
+
+.chip-saved {
+  color: var(--color-accent);
+  background: rgb(49 154 75 / 24%);
+}
+
+.chip-outline {
+  font-weight: 400;
+  color: var(--color-text-on-dark);
+  border: 1px solid var(--color-border-on-dark);
+}
+
+.chip-tint {
+  color: var(--color-primary-dark);
+  background: var(--color-primary-tint);
+}
+
+/* Cards */
+
+.card {
+  padding: var(--space-4);
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-large);
+  box-shadow: var(--shadow-card);
+}
+
+.card-dark {
+  color: var(--color-text-on-dark);
+  background: linear-gradient(135deg, var(--color-ink) 55%, #123a1d 140%);
+  border-color: var(--color-ink);
+}
+
+.card h3 + p {
+  margin-top: var(--space-1);
+  color: var(--color-text-muted);
+}
+
+.card-dark h3 + p {
+  color: var(--color-text-on-dark-muted);
+}
+
+.check-list {
+  display: grid;
+  gap: 12px;
+}
+
+.check-list li {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.check-list li::before {
+  flex: none;
+  width: 20px;
+  height: 20px;
+  margin-top: 2px;
+  content: "";
+  background: var(--color-primary) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23fff' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 12.5l4 4 8-9'/%3E%3C/svg%3E") center / 14px no-repeat;
+  border-radius: 50%;
+}
+
+/* Data rows shared by the phone mock-ups and the OCR card */
+
+.data-list {
+  font-size: var(--font-size-small);
+}
+
+.data-row {
+  display: flex;
+  gap: var(--space-2);
+  justify-content: space-between;
+  padding-block: var(--space-1);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.data-row:last-child {
+  border-bottom: 0;
+}
+
+.data-row dt {
+  color: var(--color-text-muted);
+}
+
+.data-row dd {
+  font-weight: 700;
+}
+
+@media (min-width: 600px) {
+  .btn {
+    padding-inline: var(--space-4);
+  }
+}
+
+@media (min-width: 960px) {
+  .section {
+    padding-block: var(--space-12);
+  }
+
+  .section-heading {
+    margin-bottom: var(--space-8);
+  }
+}
