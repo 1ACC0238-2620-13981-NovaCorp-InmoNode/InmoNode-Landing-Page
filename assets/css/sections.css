@@ -229,6 +229,12 @@
 }
 
 
+@media (max-width: 599px) {
+  .hero-actions .btn {
+    width: 100%;
+  }
+}
+
 .hero-visual {
   position: relative;
   justify-self: center;
@@ -782,6 +788,13 @@
   margin-top: auto;
 }
 
+@media (max-width: 599px) {
+  .audience-card .btn {
+    width: 100%;
+    padding-inline: var(--space-2);
+  }
+}
+
 @media (min-width: 768px) {
   .audience-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -989,6 +1002,52 @@
 
 .comparison-note {
   text-align: center;
+}
+
+@media (max-width: 639px) {
+  .comparison {
+    overflow: visible;
+    background: none;
+    border: 0;
+    box-shadow: none;
+  }
+
+  .comparison-table {
+    min-width: 0;
+  }
+
+  .comparison-table thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+  }
+
+  .comparison-table tbody tr {
+    display: block;
+    margin-bottom: var(--space-2);
+    overflow: hidden;
+    background: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-medium);
+  }
+
+  .comparison-table tbody th,
+  .comparison-table tbody td {
+    display: block;
+    width: auto;
+  }
+
+  .comparison-table tbody td::before {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+    content: attr(data-label);
+  }
 }
 
 /* Research findings */
@@ -1415,4 +1474,25 @@
 
 .legal a {
   color: var(--color-primary-dark);
+}
+
+/* Sticky call to action on small screens */
+
+.sticky-cta {
+  position: fixed;
+  right: var(--space-2);
+  bottom: var(--space-2);
+  left: var(--space-2);
+  z-index: 15;
+  min-height: 56px;
+}
+
+.sticky-cta[hidden] {
+  display: none;
+}
+
+@media (min-width: 960px) {
+  .sticky-cta {
+    display: none;
+  }
 }

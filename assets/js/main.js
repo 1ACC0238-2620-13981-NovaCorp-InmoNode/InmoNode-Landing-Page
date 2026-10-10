@@ -172,8 +172,34 @@ function initDemoForm() {
   });
 }
 
+/**
+ * Keeps a call to action within reach on small screens, except while the
+ * hero, the demo form or the footer are already on screen.
+ */
+function initStickyCta() {
+  const cta = document.querySelector('.sticky-cta');
+  const targets = document.querySelectorAll('.hero, #demo, .site-footer');
+  if (!cta || !('IntersectionObserver' in window)) {
+    return;
+  }
+
+  const visibleTargets = new Set();
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        visibleTargets.add(entry.target);
+      } else {
+        visibleTargets.delete(entry.target);
+      }
+    });
+    cta.hidden = visibleTargets.size > 0;
+  });
+  targets.forEach((target) => observer.observe(target));
+}
+
 initNavigation();
 initSteps();
 initPlanLinks();
 initAppLinks();
 initDemoForm();
+initStickyCta();
