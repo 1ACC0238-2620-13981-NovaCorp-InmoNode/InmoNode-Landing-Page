@@ -7,7 +7,7 @@
   <meta name="description" content="Cotiza, simula tu financiamiento y gestiona la compra de tu lote con total transparencia. Accede a tus contratos y estado de cuenta inmobiliario 24/7.">
   <meta name="keywords" content="compra de lotes, proyectos inmobiliarios, simulación de crédito inmobiliario, terrenos, InmoNode, NovaCorp">
   <meta name="author" content="NovaCorp">
-  <meta name="theme-color" content="#020202">
+  <meta name="theme-color" content="#0b141d">
 
   <meta property="og:type" content="website">
   <meta property="og:locale" content="es_PE">
@@ -20,7 +20,7 @@
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap">
   <link rel="stylesheet" href="assets/css/tokens.css">
   <link rel="stylesheet" href="assets/css/base.css">
   <link rel="stylesheet" href="assets/css/sections.css">
@@ -30,8 +30,8 @@
   <a class="skip-link" href="#main">Saltar al contenido</a>
   <svg class="visually-hidden" aria-hidden="true" focusable="false">
     <symbol id="logo-mark" viewBox="0 0 64 64">
-      <path fill="#87c757" d="M20 29.2 29.6 34 20 38.8 10.4 34z"/>
-      <path fill="#319a4b" d="M32 23.2 41.6 28 32 32.8 22.4 28zM44 29.2 53.6 34 44 38.8 34.4 34zM32 35.2 41.6 40 32 44.8 22.4 40z"/>
+      <path fill="#35c966" d="M20 29.2 29.6 34 20 38.8 10.4 34z"/>
+      <path fill="#1e9743" d="M32 23.2 41.6 28 32 32.8 22.4 28zM44 29.2 53.6 34 44 38.8 34.4 34zM32 35.2 41.6 40 32 44.8 22.4 40z"/>
       <path fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M8 41l24 12 24-12M8 47l24 12 24-12"/>
       <path fill="currentColor" fill-rule="evenodd" d="M32 27c0 0-7.5-8.5-7.5-14.5a7.5 7.5 0 0 1 15 0C39.5 18.5 32 27 32 27zm0-11.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
     </symbol>
@@ -67,10 +67,7 @@
         </ul>
       </nav>
       <div class="site-header-actions">
-        <a class="btn btn-primary" href="#demo" aria-label="Solicitar demo">
-          <span class="label-wide">Solicitar demo</span>
-          <span class="label-narrow">Demo</span>
-        </a>
+        <a class="btn btn-primary" href="#demo">Solicitar demo</a>
         <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false">
           <span class="visually-hidden">Abrir menú</span>
           <svg class="icon nav-toggle-open" aria-hidden="true"><use href="#icon-menu"/></svg>
@@ -96,7 +93,7 @@
 
         <div class="hero-visual" aria-hidden="true">
           <div class="phone">
-            <div class="phone-status"><span>10:42</span><span class="chip chip-offline">• Sin conexión</span></div>
+            <div class="phone-status"><span>10:42</span><span class="chip chip-warning">• Sin conexión</span></div>
             <p class="phone-title">Las Lomas · Etapa 2</p>
             <div class="scanner"><div class="voucher"><span></span><span></span><span></span></div></div>
             <p class="phone-label">Voucher leído con OCR</p>
@@ -124,7 +121,7 @@
       </div>
     </section>
 
-    <section class="section" id="problema">
+    <section class="section problem" id="problema">
       <div class="container">
         <div class="section-heading">
           <p class="eyebrow">El problema</p>
@@ -157,7 +154,7 @@
       </div>
     </section>
 
-    <section class="section section-white" id="solucion">
+    <section class="section section-white solution" id="solucion">
       <div class="container">
         <h2 class="visually-hidden">La solución de inmoNode</h2>
         <div class="solution-grid">
@@ -166,7 +163,7 @@
             <h3>Modo offline con base local</h3>
             <p>Registra prospectos, consulta el plano y separa lotes sin señal. Todo se guarda en el dispositivo y nada se pierde.</p>
             <p class="state-flow">
-              <span class="chip chip-offline">• Sin conexión</span>
+              <span class="chip chip-warning">• Sin conexión</span>
               <svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg>
               <span class="chip chip-saved">✓ Guardado en el dispositivo</span>
             </p>
@@ -212,15 +209,15 @@
       </div>
     </section>
 
-    <section class="section section-dark" id="como-funciona">
+    <section class="section section-dark steps-section" id="como-funciona">
       <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">Cómo funciona</p>
-          <h2>Del terreno a tu oficina en 3 pasos</h2>
-          <p class="lead">Sin papel, sin digitar dos veces y sin depender de la señal.</p>
-        </div>
-
         <div class="steps-layout">
+          <div class="section-heading">
+            <p class="eyebrow">Cómo funciona</p>
+            <h2>Del terreno a tu oficina en 3 pasos</h2>
+            <p class="lead">Sin papel, sin digitar dos veces y sin depender de la señal.</p>
+          </div>
+
           <ol class="steps">
             <li class="step is-active">
               <button class="step-button" type="button" aria-controls="step-screen-1" aria-pressed="true">
@@ -257,7 +254,7 @@
           <div class="steps-visual">
             <div class="phone">
               <div class="phone-screen" id="step-screen-1">
-                <div class="phone-status"><span>10:42</span><span class="chip chip-offline">• Sin conexión</span></div>
+                <div class="phone-status"><span>10:42</span><span class="chip chip-warning">• Sin conexión</span></div>
                 <p class="phone-title">Nueva separación</p>
                 <dl class="phone-fields">
                   <div><dt>Cliente</dt><dd>María T.</dd></div>
@@ -269,7 +266,7 @@
                 <p class="phone-caption">✓ Guardado en el dispositivo</p>
               </div>
               <div class="phone-screen" id="step-screen-2" hidden>
-                <div class="phone-status"><span>10:44</span><span class="chip chip-offline">• Sin conexión</span></div>
+                <div class="phone-status"><span>10:44</span><span class="chip chip-warning">• Sin conexión</span></div>
                 <p class="phone-title">Escanear voucher</p>
                 <div class="scanner"><div class="voucher"><span></span><span></span><span></span></div></div>
                 <dl class="data-list">
@@ -451,7 +448,7 @@
       </div>
     </section>
 
-    <section class="section section-dark" id="hallazgos">
+    <section class="section section-dark findings" id="hallazgos">
       <div class="container">
         <div class="section-heading">
           <p class="eyebrow">Lo que escuchamos</p>
@@ -461,19 +458,19 @@
 
         <div class="finding-grid">
           <article class="finding-card">
-            <p class="chip chip-offline">Agentes de campo</p>
+            <p class="chip chip-warning">Agentes de campo</p>
             <h3>La señal falla justo donde se cierra la venta</h3>
             <p>Los agentes emiten recibos provisionales a mano y coordinan la disponibilidad por WhatsApp. Después, la oficina concilia cada pago manualmente.</p>
             <p class="finding-answer"><svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg>Modo offline y sincronización automática</p>
           </article>
           <article class="finding-card">
-            <p class="chip chip-offline">Agentes de campo</p>
+            <p class="chip chip-warning">Agentes de campo</p>
             <h3>Los datos se pierden entre el terreno y la oficina</h3>
             <p>Sin un flujo estándar, a los asesores nuevos se les pasan fotos del DNI, el estado civil o cambios en el financiamiento, y la reserva formal se retrasa.</p>
             <p class="finding-answer"><svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg>Expediente digital desde el terreno</p>
           </article>
           <article class="finding-card">
-            <p class="chip chip-saved">Compradores</p>
+            <p class="chip chip-info">Compradores</p>
             <h3>La confianza se gana con transparencia</h3>
             <p>Temen que sus comprobantes se pierdan en el chat o que el asesor cambie de número, y llaman una y otra vez para pedir copias de su contrato.</p>
             <p class="finding-answer"><svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg>Portal con contratos, pagos y alertas</p>
@@ -483,10 +480,9 @@
       </div>
     </section>
 
-    <section class="section" id="planes">
+    <section class="section pricing" id="planes">
       <div class="container">
         <div class="section-heading section-heading-centered">
-          <p class="eyebrow">Planes</p>
           <h2>Un plan para cada etapa de tu inmobiliaria</h2>
           <p class="lead">Suscripción según tu número de agentes y el volumen de vouchers que procesas. Te armamos una cotización a tu medida.</p>
         </div>
@@ -678,8 +674,6 @@
       </div>
     </div>
   </footer>
-
-  <a class="btn btn-primary sticky-cta" href="#demo" hidden>Solicitar demo gratuita</a>
 
 </body>
 </html>
