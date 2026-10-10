@@ -24,8 +24,10 @@
   <link rel="stylesheet" href="assets/css/tokens.css">
   <link rel="stylesheet" href="assets/css/base.css">
   <link rel="stylesheet" href="assets/css/sections.css">
+  <script src="assets/js/main.js" defer></script>
 </head>
 <body data-app-url="">
+  <a class="skip-link" href="#main">Saltar al contenido</a>
   <svg class="visually-hidden" aria-hidden="true" focusable="false">
     <symbol id="logo-mark" viewBox="0 0 64 64">
       <path fill="#87c757" d="M20 29.2 29.6 34 20 38.8 10.4 34z"/>
@@ -69,6 +71,11 @@
           <span class="label-wide">Solicitar demo</span>
           <span class="label-narrow">Demo</span>
         </a>
+        <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false">
+          <span class="visually-hidden">Abrir menú</span>
+          <svg class="icon nav-toggle-open" aria-hidden="true"><use href="#icon-menu"/></svg>
+          <svg class="icon nav-toggle-close" aria-hidden="true"><use href="#icon-x"/></svg>
+        </button>
       </div>
     </div>
   </header>
@@ -621,6 +628,7 @@
         </div>
 
         <form class="demo-form" action="" method="post">
+          <input type="hidden" name="plan" id="demo-plan">
           <div class="form-field">
             <label for="demo-name">Nombre</label>
             <input type="text" id="demo-name" name="name" autocomplete="name" required aria-describedby="demo-name-error">
@@ -632,6 +640,7 @@
             <p class="form-error" id="demo-email-error" aria-live="polite"></p>
           </div>
           <button class="btn btn-primary btn-large" type="submit">Solicitar mi demo</button>
+          <p class="form-status" role="status" hidden></p>
           <p class="form-note">Al enviar aceptas nuestra <a href="privacy.html">Política de privacidad</a>. Solo usaremos tus datos para coordinar la demo.</p>
         </form>
       </div>
@@ -669,6 +678,8 @@
       </div>
     </div>
   </footer>
+
+  <a class="btn btn-primary sticky-cta" href="#demo" hidden>Solicitar demo gratuita</a>
 
 </body>
 </html>
