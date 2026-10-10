@@ -40,18 +40,18 @@ HTML5, CSS3 y JavaScript, sin dependencias ni proceso de compilación.
 
 ## Guía de estilo
 
-Los estilos siguen las Style Guidelines del informe del proyecto:
+Los estilos reproducen el mock-up de la Landing Page del informe del proyecto (sección 3.1.3.2). Todos los valores están en `assets/css/tokens.css`:
 
 | Elemento | Valor |
 | :--- | :--- |
-| Color primario | `#319A4B` |
-| Color de acento | `#87C757` |
-| Texto y fondos oscuros | `#020202` |
-| Superficie | `#F7F8F5` |
-| Advertencia | `#F0F66E` |
-| Error u ocupado | `#E4572E` |
-| Tipografía | Josefin Sans (H1 40 px, H2 32 px, cuerpo 16 px) |
-| Espaciado | Múltiplos de 8 px |
+| Color primario | `#1E9743` |
+| Color de acento | `#35C966` |
+| Texto y fondos oscuros | `#0B141D` |
+| Superficie | `#F6F8F7` |
+| Advertencia | `#F2B943` |
+| Error u ocupado | `#C74A38` |
+| Tipografía | Manrope (título principal 60 px, títulos de sección 46 px, cuerpo 16 px) |
+| Espaciado | Base de 8 px |
 
 ## Uso local
 
