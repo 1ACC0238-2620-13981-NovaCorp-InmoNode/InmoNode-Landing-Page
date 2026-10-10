@@ -149,6 +149,187 @@
         </figure>
       </div>
     </section>
+
+    <section class="section section-white" id="solucion">
+      <div class="container">
+        <h2 class="visually-hidden">La solución de inmoNode</h2>
+        <div class="solution-grid">
+          <article class="card card-dark solution-card solution-card-offline">
+            <span class="icon-box"><svg class="icon" aria-hidden="true"><use href="#icon-phone"/></svg></span>
+            <h3>Modo offline con base local</h3>
+            <p>Registra prospectos, consulta el plano y separa lotes sin señal. Todo se guarda en el dispositivo y nada se pierde.</p>
+            <p class="state-flow">
+              <span class="chip chip-offline">• Sin conexión</span>
+              <svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg>
+              <span class="chip chip-saved">✓ Guardado en el dispositivo</span>
+            </p>
+            <ul class="chip-row">
+              <li class="chip chip-outline">Catálogo de lotes</li>
+              <li class="chip chip-outline">Plano del proyecto</li>
+              <li class="chip chip-outline">Separación in situ</li>
+            </ul>
+          </article>
+
+          <article class="card solution-card solution-card-ocr">
+            <span class="icon-box"><svg class="icon" aria-hidden="true"><use href="#icon-scan"/></svg></span>
+            <h3>Vouchers leídos con OCR</h3>
+            <p>Toma una foto y inmoNode extrae los datos del pago. Si algo sale mal, lo corriges en un toque.</p>
+            <dl class="data-list ocr-result">
+              <div class="data-row"><dt>Monto</dt><dd>S/ 1,500.00</dd></div>
+              <div class="data-row"><dt>Fecha</dt><dd>08/10/2026</dd></div>
+              <div class="data-row"><dt>N° operación</dt><dd>004812736</dd></div>
+            </dl>
+          </article>
+
+          <article class="card solution-card solution-card-sync">
+            <span class="icon-box"><svg class="icon" aria-hidden="true"><use href="#icon-sync"/></svg></span>
+            <h3>Sincronización automática</h3>
+            <p>Al volver la señal, los registros llegan solos a la oficina. Si otro agente ya vendió el lote, te avisamos.</p>
+            <div class="sync-progress" aria-hidden="true">
+              <p><span>Sincronizando</span><span>3 de 3</span></p>
+              <span class="progress-bar"></span>
+            </div>
+          </article>
+
+          <article class="card solution-card solution-card-repository">
+            <span class="icon-box"><svg class="icon" aria-hidden="true"><use href="#icon-folder"/></svg></span>
+            <h3>Repositorio digital centralizado</h3>
+            <p>Contratos, vouchers y estados de cuenta en un solo lugar seguro en la nube, listos para la conciliación y las auditorías.</p>
+            <ul class="file-row" aria-hidden="true">
+              <li class="file-chip"><span>PDF</span>Contrato_B-14</li>
+              <li class="file-chip"><span>JPG</span>Voucher_separación</li>
+              <li class="file-chip"><span>PDF</span>Estado_de_cuenta</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="como-funciona">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Cómo funciona</p>
+          <h2>Del terreno a tu oficina en 3 pasos</h2>
+          <p class="lead">Sin papel, sin digitar dos veces y sin depender de la señal.</p>
+        </div>
+
+        <div class="steps-layout">
+          <ol class="steps">
+            <li class="step is-active">
+              <button class="step-button" type="button" aria-controls="step-screen-1" aria-pressed="true">
+                <span class="step-number">1</span>
+                <span class="step-body">
+                  <span class="step-label">Paso 1</span>
+                  <span class="step-title">Registra en campo, aunque no haya señal</span>
+                  <span class="step-text">Abre el catálogo y el plano descargados, registra al prospecto y separa el lote. Todo queda guardado en el teléfono.</span>
+                </span>
+              </button>
+            </li>
+            <li class="step">
+              <button class="step-button" type="button" aria-controls="step-screen-2" aria-pressed="false">
+                <span class="step-number">2</span>
+                <span class="step-body">
+                  <span class="step-label">Paso 2</span>
+                  <span class="step-title">Fotografía el voucher y deja que el OCR lo lea</span>
+                  <span class="step-text">inmoNode extrae el monto, la fecha y el número de operación. Tú solo revisas y confirmas.</span>
+                </span>
+              </button>
+            </li>
+            <li class="step">
+              <button class="step-button" type="button" aria-controls="step-screen-3" aria-pressed="false">
+                <span class="step-number">3</span>
+                <span class="step-body">
+                  <span class="step-label">Paso 3</span>
+                  <span class="step-title">Sincroniza con tu oficina al recuperar señal</span>
+                  <span class="step-text">Los registros pendientes se envían solos. Si otro agente ya separó el lote, recibes el aviso para reubicar a tu cliente.</span>
+                </span>
+              </button>
+            </li>
+          </ol>
+
+          <div class="steps-visual">
+            <div class="phone">
+              <div class="phone-screen" id="step-screen-1">
+                <div class="phone-status"><span>10:42</span><span class="chip chip-offline">• Sin conexión</span></div>
+                <p class="phone-title">Nueva separación</p>
+                <dl class="phone-fields">
+                  <div><dt>Cliente</dt><dd>María T.</dd></div>
+                  <div><dt>Proyecto</dt><dd>Las Lomas · Etapa 2</dd></div>
+                  <div><dt>Lote</dt><dd>B-14 · 120 m²</dd></div>
+                  <div><dt>Separación</dt><dd>S/ 1,500.00</dd></div>
+                </dl>
+                <p class="phone-action">Guardar sin conexión</p>
+                <p class="phone-caption">✓ Guardado en el dispositivo</p>
+              </div>
+              <div class="phone-screen" id="step-screen-2" hidden>
+                <div class="phone-status"><span>10:44</span><span class="chip chip-offline">• Sin conexión</span></div>
+                <p class="phone-title">Escanear voucher</p>
+                <div class="scanner"><div class="voucher"><span></span><span></span><span></span></div></div>
+                <dl class="data-list">
+                  <div class="data-row"><dt>Monto</dt><dd>S/ 1,500.00</dd></div>
+                  <div class="data-row"><dt>Fecha</dt><dd>08/10/2026</dd></div>
+                  <div class="data-row"><dt>N° operación</dt><dd>004812736</dd></div>
+                </dl>
+                <p class="phone-action">Confirmar datos</p>
+                <p class="phone-caption">✓ Voucher leído con OCR</p>
+              </div>
+              <div class="phone-screen" id="step-screen-3" hidden>
+                <div class="phone-status"><span>17:05</span><span class="chip chip-saved">• En línea</span></div>
+                <p class="phone-title">Sincronización</p>
+                <ul class="sync-queue">
+                  <li><span><strong>Prospecto</strong>María T.</span><span class="chip chip-saved">Enviado</span></li>
+                  <li><span><strong>Separación</strong>Lote B-14</span><span class="chip chip-saved">Enviado</span></li>
+                  <li><span><strong>Voucher</strong>N° 004812736</span><span class="chip chip-saved">Enviado</span></li>
+                </ul>
+                <div class="sync-progress">
+                  <p><span>Sincronizando</span><span>3 de 3</span></p>
+                  <span class="progress-bar"></span>
+                </div>
+                <p class="phone-caption">✓ Tu oficina ya tiene los registros</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="compradores">
+      <div class="container">
+        <div class="section-heading section-heading-centered">
+          <p class="eyebrow">Para quién</p>
+          <h2>Pensado para quien vende y para quien compra</h2>
+          <p class="lead">Una app de campo para tu equipo comercial y un portal web de autoservicio para tus compradores.</p>
+        </div>
+
+        <div class="audience-grid">
+          <article class="card card-dark audience-card">
+            <p class="chip chip-saved">App móvil · Inmobiliarias y agentes</p>
+            <h3>Vende más rápido, sin papeleo</h3>
+            <p>Para agentes comerciales que trabajan en proyectos alejados, con poca o ninguna señal.</p>
+            <ul class="check-list">
+              <li>Catálogo y plano del proyecto disponibles sin internet</li>
+              <li>Registro de prospectos y separación del lote en el terreno</li>
+              <li>Foto del voucher con lectura automática por OCR</li>
+              <li>Aviso si otro agente ya vendió el lote, para reubicar al cliente</li>
+            </ul>
+            <a class="btn btn-primary" href="#demo">Solicitar demo gratuita</a>
+          </article>
+
+          <article class="card audience-card">
+            <p class="chip chip-tint">Portal web · Compradores e inversionistas</p>
+            <h3>Compra tu lote con total transparencia</h3>
+            <p>Para familias, profesionales e inversionistas que quieren seguir su compra sin depender de llamadas ni chats.</p>
+            <ul class="check-list">
+              <li>Explora proyectos por ubicación, dimensiones y precio</li>
+              <li>Simula tu financiamiento y descarga la cotización en PDF</li>
+              <li>Revisa tu contrato digital antes de firmar</li>
+              <li>Consulta tu estado de cuenta y recibe alertas de tus cuotas</li>
+            </ul>
+            <a class="btn btn-outline" href="#demo" data-app-path="/register">Avísame cuando abra el portal</a>
+          </article>
+        </div>
+      </div>
+    </section>
   </main>
 
 </body>
