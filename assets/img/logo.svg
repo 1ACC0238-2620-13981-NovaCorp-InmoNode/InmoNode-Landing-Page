@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="InmoNode">
-  <path fill="#87c757" d="M20 29.2 29.6 34 20 38.8 10.4 34z"/>
-  <path fill="#319a4b" d="M32 23.2 41.6 28 32 32.8 22.4 28zM44 29.2 53.6 34 44 38.8 34.4 34zM32 35.2 41.6 40 32 44.8 22.4 40z"/>
-  <path fill="none" stroke="#020202" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M8 41l24 12 24-12M8 47l24 12 24-12"/>
-  <path fill="#020202" fill-rule="evenodd" d="M32 27c0 0-7.5-8.5-7.5-14.5a7.5 7.5 0 0 1 15 0C39.5 18.5 32 27 32 27zm0-11.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-</svg>
